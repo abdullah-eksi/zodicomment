@@ -12,12 +12,42 @@ Hem eğlenceli hem de mistik bir sohbet deneyimi yaşatır.
 
 ## 📱 Özellikler
 
-* Doğum tarihine özel **kişiselleştirilmiş burç yorumları**
+
 * **Farklı tonlarda yanıtlar** (eğlenceli, romantik, bilge, eleştirel)
 * **Sohbet arayüzü** ile kolay kullanım
 * **Hesap sistemi** ve güvenli saklanan sohbet geçmişi
 * **Çoklu platform desteği** (Android, iOS, Web, Desktop)
 * **Karanlık tema** ile göz yormayan tasarım
+
+## 🔧 Teknik Detaylar
+
+### Kullanılan Teknolojiler
+
+- **Flutter**: Çoklu platform desteği için Flutter framework'ü
+- **Dart**: Uygulama geliştirme dili
+- **Google Gemini API**: Yapay zeka destekli yanıtlar için
+- **SQLite**: Yerel veritabanı desteği
+- **Provider**: Durum yönetimi
+- **Flutter Secure Storage**: Hassas verilerin güvenli saklanması
+
+### Proje Yapısı
+
+```
+lib/
+├── main.dart           # Uygulama başlangıç noktası
+├── routes.dart         # Yönlendirme ve rota yönetimi
+├── model/             
+│   ├── databaseModel.dart # Veritabanı işlemleri
+│   ├── messageModel.dart  # Mesaj yönetimi
+│   └── userModel.dart     # Kullanıcı modeli ve kimlik doğrulama
+├── service/
+│   └── gemini.dart     # Gemini AI API entegrasyonu
+├── view/
+│   ├── components/     # Yeniden kullanılabilir UI bileşenleri
+│   └── pages/          # Uygulama sayfaları
+└── viewmodel/          # Sayfa durum yönetimi
+```
+
 
 ## 🔧 Teknolojiler
 
